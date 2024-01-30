@@ -11,7 +11,7 @@ module.exports = (sequelize) => {
       primaryKey: true,
     },
   
-    nombre: {
+    name: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
@@ -20,14 +20,14 @@ module.exports = (sequelize) => {
       }
     },
   
-    imagen: {
+    image: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
         isUrl: true,
       }
     },
-    origen: {
+    origin: {
       type: DataTypes.STRING,
       allowNull: false,
     },
