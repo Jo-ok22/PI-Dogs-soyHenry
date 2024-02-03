@@ -1,9 +1,15 @@
-const postDog =  (req, res) => {
+const {Dog} = require('../models/Dog')
+
+const postDog = async (req, res) => {
     try {
-        const {id, name, image, alturamin, alturamax, pesomin, pesomax, vidamin, vidamax} = req.body
-        if(!id || !name || !image || !alturamin || !alturamax || !pesomin || !pesomax || !vidamin || !vidamax)
-        res.status(400).send('faltan datos')
-        res.status(200).json(body)
+        const {id, name} = req.body  // aca no esta el problema, si trae datos
+        console.log(id, name);
+        if(!id || !name) res.status(404).send('faltan datos')
+        
+        else {
+            const createDog = await Dog.create({id,name})// en esta parte ahi algun problema 
+            res.status(200).json(createDog)
+        }
     } catch (error) {
         res.status(500).send(error)
     }

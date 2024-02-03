@@ -18,7 +18,7 @@ router.post('/dogs', postDog)
 
 
 // rutas de los temperamentos
-
+//router.get('/temperament',)
 
 
 module.exports = router;
