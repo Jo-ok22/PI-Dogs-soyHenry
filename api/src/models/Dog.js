@@ -19,62 +19,62 @@ module.exports = (sequelize) => {
     image: {
       type: DataTypes.STRING,
       allowNull: true,
-      validate: {
-        isUrl: true,
-      }
+      // validate: {
+      //   isUrl: true,
+      // }
     },
       origin:{
         type:DataTypes.STRING,
         allowNull: true
       },
       alturamin: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: true,
-        validate: {
-          min: 15,
-          max: 100,
-        }
+        // validate: {
+        //   min: 15,
+        //   max: 100,
+        // }
       },
     
       alturamax: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: true,
-        validate: {
-          min: 15,
-          max: 100,
-        }
+        // validate: {
+        //   min: 15,
+        //   max: 100,
+        // }
       },
       pesomin: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: true,
-        validate: {
-          min: 5,
-          max: 80,
-        }
+        // validate: {
+        //   min: 5,
+        //   max: 80,
+        // }
       },
       pesomax: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: true,
-        validate: {
-          min: 5,
-          max: 80,
-        }
+        // validate: {
+        //   min: 5,
+        //   max: 80,
+        // }
       },
       vidamin: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: true,
-        validate: {
-          min: 2,
-          max: 35,
-        }
+        // validate: {
+        //   min: 2,
+        //   max: 35,
+        // }
       },
       vidamax: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: true,
-        validate: {
-          min: 2,
-          max: 35,
-        }
+        // validate: {
+        //   min: 2,
+        //   max: 35,
+        // }
       }
   },{timestamps: false,})
   return Dog

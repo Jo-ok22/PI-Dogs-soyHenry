@@ -2,6 +2,7 @@ const { Router } = require('express');
 const getDogs = require('../controller/getDogsControler')
 const getDogById = require('../controller/getDogByIdController')
 const postDog = require('../controller/postDogController')
+const deletDog = require('../controller/deleteDogController')
 // Importar todos los routers;
 // Ejemplo: const authRouter = require('./auth.js');
 
@@ -14,6 +15,7 @@ const router = Router();
 router.get('/dogs', getDogs)
 router.get('/:id', getDogById)
 router.post('/dogs', postDog)
+router.delete('/:id', deletDog)
 
 
 
