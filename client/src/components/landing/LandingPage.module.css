@@ -1,0 +1,36 @@
+.container {
+    height: 100vh; /* 100% de la altura de la ventana */
+    background-size: cover; /* Ajustar la imagen para cubrir todo el contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backgroundImage {
+    width: 100%; /* Asegurar que la imagen abarque todo el contenedor */
+    text-align: center; /* Centrar el contenido */
+    color: white; /* Color del texto (puedes ajustarlo según tu diseño) */
+}
+
+.title {
+    color: #ed7d2a;
+    font-family: rowdies;
+    font-size: 5rem;
+    margin: 20px auto;
+    text-shadow: 3px 3px rgb(0, 0, 0);
+    width: 80%;
+}
+
+.button {
+    background-color: #ed7d2a;
+    color: #4475b2;
+    padding: .3em;
+    font-family: rowdies;
+    font-size: 4rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+    transition:  0.3s ease;
+}
+
